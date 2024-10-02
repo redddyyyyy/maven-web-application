@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                    git branch: 'master', git credentialsId: '484021b6-2c16-44f3-923e-a8e604ebb953', url: 'https://github.com/redddyyyyy/maven-web-application.git' 
+          }
+      }
+  }
+}
+
